@@ -1,6 +1,5 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    gutil = require('gulp-util'),
     browserify = require('browserify'),
     connect = require('gulp-connect'),
     gulpif = require('gulp-if'),
