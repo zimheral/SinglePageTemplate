@@ -1,0 +1,36 @@
+{
+  "name": "single_page_template",
+  "version": "1.0.0",
+  "description": "Responsive sigle page website template with Node.js, Gulp.js and Sass",
+  "author": "zimheral",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zimheral/SinglePageTemplate.git"
+  },
+  "devDependencies": {
+    "browserify": "^16.2.2",
+    "globby": "^8.0.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-if": "^2.0.2",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-util": "^3.0.8",
+    "jquery": "^2.1.1",
+    "stickybits": "^3.3.2",
+    "through": "^2.3.8",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "dependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "gsap": "^2.0.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "scrollmagic": "^2.0.5",
+    "susy": "^2.2.12"
+  }
+}

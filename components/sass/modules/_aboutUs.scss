@@ -1,0 +1,55 @@
+#aboutUs {
+	background-image: linear-gradient(to bottom right,$lightBlue,$lightBrown);
+
+	color: $black;
+
+	@include headings(){
+		color: $black;
+	}
+
+	article {
+		@include clearfix;
+		section {
+			@include breakpoint($small){
+				@include span(1 of 3);
+			}
+			@include breakpoint(450px $small){
+
+				&.checklist{
+					@include span(1 of 2);
+				}
+			}
+			h2 {
+				color: lighten($darkRed,20);
+				font-size: 1.3em;
+				line-height: 110%;
+				padding: 10px 0;
+			}
+			p{
+				font-size: 1em;
+				line-height: 130%;
+			}
+			ul{
+				li{
+					list-style: square;
+					margin-left: 10%;
+					line-height: 115%;
+					margin-bottom: 5px;
+				}
+			}
+		}
+		section#team {
+			margin: 0;
+			list-style: none;
+			border-top: 1px solid black;
+			padding: 15px 0;
+			margin-left: 0;
+			strong{
+				color:$yellow;
+			}
+			&.first-child {
+				border-top: none;
+			}
+		}
+	}
+}

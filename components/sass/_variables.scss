@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Exo+2);
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Caveat'), local('Caveat-Regular'), url('../fonts/Caveat-Regular.ttf') format('truetype');
+}
+
+@include border-box-sizing;
+
+// Columns
+$susy: (
+	columns: 12,
+  	gutters: 1/4,
+  	gutter-position: inside,
+  	container: 60em,
+);
+
+//Breakpoint Variables (MEDIA QUERIES)
+
+$narrow: 400px;
+$small : 650px;
+$medium: 960px;
+$wide:   1200px;
+
+//Colors
+
+$blue: #000F4A;
+$green: #10CB00;
+$yellow: #FAFF00;
+$orange: #FF6F00;
+$red: #FF0000;
+$pink: #FF8181;
+$purple: #8F0F79;
+$black: #000000;
+$white: #ffffff;
+
+//Custom Palette 1
+$lightYellow: #F6F792;
+$darkGrey:    #333745;
+$lightBlue:    #77C4D3;
+$lighterBlue: #DAEDE2;
+$lightRed:    #EA2E49;
+
+//Custom Palette 2
+$darkRed: #6B0C22;
+$darkLessRed: #D9042B;
+$lightBrown: #F4CB89;
+$lightestBlue: #588C8C;
+$darkBlue: #011C26;
+
+$skyBlue: #3498db;
+
+$bgColor    : $white;
+$typeDefault        : $black;
+$navBgColor      : $darkBlue;
+$navFgColor      : $white;
+$navHoverColor           : $lighterBlue;
+$navBrandColor         : $darkLessRed;
+$headerSubColor        : $black;
+
+//Fonts
+
+$fontFamily   		: 'Exo 2','Helvetica Neue',Helvetica, Arial, sans-serif;
+$fontFamily2   		: 'Caveat', cursive, sans-serif;
+$thin				      : 200;
+$normal				    : 400;
+$bold				      : 600;
+$bolder				    : 800;
+
+$headerFont: $thin 1.5em/1.5em $fontFamily;
+$headerFont2: $thin 1.5em/1.5em $fontFamily2;
+$mainFont: $thin 1em/1.5em $fontFamily;
+$headerColor: lighten($blue,2);
+

@@ -1,0 +1,76 @@
+#contact {
+
+	@include fullBackImage('../images/contact.jpg');
+	display: flex;
+	align-items: center;
+
+	@include breakpoint(max-width $small){
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	
+	form{		
+		@include container (100%);
+		border-color: red;
+		@include span(2 of 5);
+		display: flex;
+		flex-flow: column wrap;
+		background-color:rgba(72,72,72,0.4);
+		padding: 5px 5px;
+		border-radius:5px;
+
+		@include breakpoint(max-width $small){
+			@include span(4 of 5);
+		}
+
+		.frm-field {
+			font: $bold 1em $fontFamily;
+			color: $darkGrey;
+			margin-bottom: 15px;
+			padding: 13px 13px 13px 50px;
+			background-color: $white;
+			border: 2px solid $white;
+			border-radius:5px;
+			width:100%;
+
+			@include breakpoint(max-width $small){
+				margin-bottom: 10px;
+				padding: 10px 5px;									
+			}
+		}
+
+		.frm-field:focus{
+			box-shadow: 0;
+			border: 2px solid $navBrandColor;
+			outline: none;
+		}
+
+		.frm-input{
+			border-bottom: 2px solid $darkRed;				
+		}
+
+		.frm-message {
+			resize: none;
+			height: 100px;				
+		}
+
+		.frm-send {
+			width: 100%;
+			border: $white solid 2px;
+			cursor: pointer;
+			background-color: $skyBlue;
+			color:  white;
+			font: $bold 24px $fontFamily;
+			-webkit-transition: all ease 0.3s;
+			-moz-transition: all ease 0.3s;
+			transition: all ease 0.3s;
+			margin: 0;
+		}
+
+		.frm-send:hover {
+			background-color: $white;
+			color: $skyBlue;
+			border: $skyBlue solid 2px;
+		}
+	}
+}

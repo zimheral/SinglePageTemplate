@@ -1,0 +1,51 @@
+#gallery{
+
+	
+	h1 {
+		color: $red;		
+	}
+	img {
+		width: 100%;
+		border-radius:10px;
+	}
+
+	#gallery_items{
+		display: flex;
+		flex-flow: row wrap;
+	}
+
+	figure {
+		@include span(4 of 12);	
+
+		p {
+			font-style: italic;
+			color: gray;
+			padding-top: 10px;
+			font-size: 1em;
+			line-height: 130%;
+		}
+	}
+
+	#headerGallery{
+		margin-bottom: 30px;
+
+		h1{
+			font-weight: $thin;
+			font-size: 2.5em;
+		}
+	}
+
+	@include breakpoint(max-width $small){
+		#headerGallery{
+			margin-bottom: 10px;		
+		}
+
+		h1{				
+			font-size: 2em;
+		}
+
+		figure {
+			@include span(12 of 12);		
+		}
+	}	
+}

@@ -1,0 +1,43 @@
+@mixin fullBackImage(
+	$image,
+	$bgPos: center center,
+	$opStart: 0,
+	$opEnd: 0,
+	$grDir: to bottom
+	) {
+	background: 
+		linear-gradient(
+			$grDir,
+			rgba(0,0,0,$opStart),
+			rgba(0,0,0,$opEnd)
+			), 
+		url($image);
+	background-repeat: no-repeat;
+	background-position: $bgPos;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+
+}
+
+@mixin clearfix {
+
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin headings($from: 1, $to: 6){
+    @for $i from $from through $to{
+      h#{$i}{
+        @content
+      }
+    }
+}

@@ -1,0 +1,47 @@
+footer{
+	@include container(100%);
+	background: lighten($black, 20);
+	padding: 10px 0;
+	position: relative;
+
+	@include breakpoint(max-width $small){
+		padding: 5px 0;
+	}	
+
+	article {
+		@include container(95%);
+	}
+
+	@include breakpoint($medium){
+	  article{
+	  	@include container;
+	  }
+	}
+
+	#socialmedia {
+		text-align: center;
+
+		ul{
+			list-style: none;
+			li {
+				display: inline-block;
+				background-color: white;
+				padding: 5px;
+				width:40px;
+				height:40px;
+				border-radius:50%;
+
+				@include breakpoint(max-width $small){
+					width:20px;
+					height:20px;
+					padding: 0px;
+				}
+
+				a{
+					color: $darkGrey;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}

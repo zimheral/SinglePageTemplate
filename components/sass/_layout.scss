@@ -1,0 +1,28 @@
+body{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.heading{
+		h1 {
+			font-size: 3em;
+			font-weight: $thin;
+		}
+	}
+
+.page{
+	position: relative;
+	padding: 25px 0;
+
+	article {
+		@include container(95%);
+	}
+
+	@include breakpoint($medium){
+	  article{
+	  	@include container;
+	  }
+	}
+}
+

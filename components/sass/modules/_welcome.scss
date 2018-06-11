@@ -1,0 +1,37 @@
+#welcome{
+	background: linear-gradient(to bottom,$lightBlue,$lightYellow);
+
+	@include breakpoint(0 $small){
+		display: none;
+	}
+
+	article{
+
+		@include container(70%);
+		@include breakpoint(0 $small){
+			@include container(33em);
+			padding: 60px 0;
+		}
+		text-align: center;
+	
+		.gallery{
+			@include clearfix;
+			img{
+
+				border-radius:40%;
+				display: none;
+
+				@include breakpoint($small){
+					@include gallery(1 of 4);
+					display:inline;
+					&.hidesm{display: none;}
+				}
+				@include breakpoint($medium){
+					@include gallery(1 of 5);
+					&.hidesm{display: inline}
+
+				}
+			}
+		}
+	}
+}

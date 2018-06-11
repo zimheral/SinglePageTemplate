@@ -1,0 +1,55 @@
+header{
+
+	.fullscreen {
+		@include fullBackImage('../images/topSplash.jpg');
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+
+		min-height: 100%;
+
+		&.mainArrow{
+			max-width: 50%;
+		}
+
+		h1{
+			font-weight: $bolder;
+			font-size: 350%;
+			line-height: 100%;
+			color: darken(black,15);			
+			background-color: rgba(207, 202, 202, 0.288);
+			padding-left: 20px;
+			padding-right: 20px;
+
+			-moz-box-shadow: 15px 15px 20px 1px rgba(29, 28, 28, 0.79);
+			box-shadow: 10px 10px 20px 10px rgba(29, 28, 28, 0.79);
+		}
+
+		a{
+			text-decoration: none;
+			outline: none;
+
+			i{
+				color:black;
+				background-color: white;
+				border: white solid medium;
+				border-radius: 30px;
+			}
+
+		}
+		
+
+		// .mainArrow a::after{
+		// 	font-family: "Font Awesome 5 Free";
+		// 	font-weight: 900;
+		// 	font-size: xx-large;
+		// 	content: "\f0ab";	
+		// 	color:black;		
+		// 	border: white solid medium;
+		// 	background-color: white;
+		// 	border-radius: 30px;		
+		// }		
+	}
+}

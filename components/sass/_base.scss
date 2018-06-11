@@ -1,0 +1,28 @@
+body{
+	font: $mainFont;
+	background: $bgColor;
+	color: $typeDefault;
+}
+
+@include headings(){
+	font: $headerFont2;
+	color: $headerColor;
+	font-weight: $bold;
+	
+}
+
+.stickyNav{
+	position: fixed;
+	top: 0 ;
+	width: 100%;
+}
+
+strong {
+	font-weight: $bold;
+}
+
+p {
+	font-weight: $thin;
+	padding-bottom: 10px;
+	text-align: justify;
+}
